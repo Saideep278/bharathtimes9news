@@ -1,0 +1,146 @@
+<div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Hello news</h1>
+          {% for i in context %}
+          {{i.id}}
+          <li> {{ i.title }} </li>
+          <p>  {{ i.desc }}  </p>
+          
+          <a href="{{i.id}}"><img class="img" src="{{i.media.url}}"></a>
+          <br><br>
+          {% endfor %}
+            
+            
+        </div>
+      </div>
+
+
+<div class="container">
+            <h1>International</h1>
+              <div class="content" id="content">
+                {% for i in context %}
+                <div class="single_content border border-light mt-2 pl-2">
+                  <h2> {{ i.title }} </h2>
+                  <p>  {{ i.desc }}  </p>
+                  <a href="{{i.id}}"><img class="img" src="{{i.media.url}}"></a>
+                </div>
+                {% endfor %} 
+              </div>
+              <div class="spinner-border text-primary mt-2 not-visible" role="status" id="spinner">
+                <span class="sr-only"></span>
+              </div>
+              <div class="load-more__btn mt-3" id="btn">
+                  <button type="button" class="btn btn-success">Load More</button>
+              </div>
+              <div class="alert alert-danger mt-2 not-visible" role="alert" id='alert'>
+                  No more post to load!!
+              </div>
+          </div>
+
+
+
+          <!-- *****--> 
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <a href="{{i.id}}"><img class="img" src="{{i.media.url}}"></a>
+                        </div>
+                        <div class="col">
+                          <p class="desc">   {{ i.desc }} </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- *****--> 
+
+
+!--<a class="ta" href="{% url 'Sports' %}" > <h1>Sports</h1> </a>-->
+
+<!-- <a class="ta" href="{% url 'Bussines' %}" > <h1>Bussines</h1> </a> -->
+
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'home' %}"><b>BharthTimes9</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class=" collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Trending</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Politics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Bussines</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Entertainment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Crime</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Regional</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Explore</a>
+          </li>
+          
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container p-3 shadow-lg bg-light ">
+    <div class="row p-3 ">
+      <div class="col">
+        1 of 3
+      </div>
+      <div class="col">
+        2 of 3
+      </div>
+      <div class="col">
+        3 of 3
+      </div>
+    </div>
+    <div class="row p-3 ">
+      <div class="col">
+        1 of 3
+      </div>
+      <div class="col">
+        2 of 3
+      </div>
+      <div class="col">
+        3 of 3
+      </div>
+    </div>
+  </div>
+
+  source news/bin/activate
+        <li class="nav-item "><a class="nav-link text-white" href="{% url 'home' %}">Home</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+.ta {
+  text-decoration: none;
+  color: black;
+}
+
+.img {
+  display: inline;
+  height: 70px;
+  width: 90px;
+  border-radius: 8px;
+  transition: transform 250ms ease-in-out;
+}
+
+.img:hover {
+  box-shadow: 10px 20px 20px #0000002e;
+  filter: brightness(100%);
+  transform: scale(1.08);
+  transform-origin: center;
+}
+
+.not-visible {
+  display: none;
+}
+
+.desc {
+  display: inline;
+}
